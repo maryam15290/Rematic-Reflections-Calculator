@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="google" content="notranslate" /> 
+		<title>RematicEGC Reflection Calculator</title>
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-VhBcF/php0Z/P5ZxlxaEx1GwqTQVIBu4G4giRWxTKOCjTxsPFETUDdVL5B6vYvOt" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/darkly/bootstrap.min.css" integrity="sha384-nNK9n28pDUDDgIiIqZ/MiyO3F4/9vsMtReZK39klb/MtkZI3/LtjSjlmyVPS3KdN" crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.0/umd/popper.min.js" integrity="sha512-PZrlUFhlOigX38TOCMdaYkhiqa/fET/Lztzjn+kdGxefUZanNUfmHv+9M/wSiOHzlcLX/vcCnmvOZSHi5Dqrsw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" /> 
+    <link rel="stylesheet" href="style.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+	</head>
+<body>
+    <!-- start the calc -->
+ 
+      
+ <div class="container">
+    <div class="row text-center mb-2">
+      <div class="col-md-12 text-center background-color: #6f42c1">
+        <h2 class="title">Rematic Reflections Calculator</h2>
+        <a href="https://rematicegc.com/" class="jet-logo__link"><img
+            src="https://rematicegc.com/wp-content/uploads/2021/11/rematic-logov2@134x-8.png" class="jet-logo__img"
+            alt="RematicEGC | $RMTX" width="484" height="134"
+            srcset="https://rematicegc.com/wp-content/uploads/2021/11/rematic-logov2@134x-8.png 2x"></a>
+      </div>
+    </div>
+        <div class="row text-center mb-2">
+            <div class="col-md-3">
+                <label for="RematicQty">Number of Rematic Tokens you own</label>
+                <input type="text" step="1" class="form-control" id="RematicQty" value="100,000,000,000" />
+                <div class="dropdown bg-secondary text-light mr-3 p-1">
+                    <div>Enter a value above or choose an option<span class="text-warning closeButton">X</span></div>
+                    <div class="dropdownvalues selectOption" data-id="RematicQty" data-qty="1,000,000,000">1 Billion</div>
+                    <div class="dropdownvalues selectOption" data-id="RematicQty" data-qty="10,000,000,000">10 Billion</div>
+                    <div class="dropdownvalues selectOption" data-id="RematicQty" data-qty="50,000,000,000">50 Billion</div>
+                    <div class="dropdownvalues selectOption" data-id="RematicQty" data-qty="100,000,000,000">100 Billion</div>
+                    <div class="dropdownvalues selectOption" data-id="RematicQty" data-qty="250,000,000,000">250 Billion</div>
+                    <div class="dropdownvalues selectOption" data-id="RematicQty" data-qty="500,000,000,000">500 Billion</div>
+                    <div class="dropdownvalues selectOption" data-id="RematicQty" data-qty="1,000,000,000,000">1 Trillion</div>
+                    <div class="dropdownvalues selectOption" data-id="RematicQty" data-qty="5,000,000,000,000">5 Trillion</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="">Market Cap</label>
+                <input type="text" class="form-control" id="marketCap" value="6,000,000" />
+              <div class="dropdown bg-secondary text-light mr-3 p-1">
+                  <div>Enter a value above or choose an option <span class="text-warning closeButton">X</span></div>
+                  <div class="dropdownvalues selectOption" data-id="marketCap" data-qty="5,000,000">5 Million</div>
+                  <div class="dropdownvalues selectOption" data-id="marketCap" data-qty="10,000,000">10 Million</div>
+                  <div class="dropdownvalues selectOption" data-id="marketCap" data-qty="25,000,000">25 Million</div>
+                  <div class="dropdownvalues selectOption" data-id="marketCap" data-qty="50,000,000">50 Million</div>
+                  <div class="dropdownvalues selectOption" data-id="marketCap" data-qty="100,000,000">100 Million</div>
+                  <div class="dropdownvalues selectOption" data-id="marketCap" data-qty="500,000,000">500 Million</div>
+                  <div class="dropdownvalues selectOption" data-id="marketCap" data-qty="1,000,000,000">1 Billion</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="dailyVolume">Daily Volume</label>
+              <input type="text" step="1" class="form-control" id="dailyVolume" value="100,000" />
+              <div class="dropdown bg-secondary text-light mr-3 p-2">
+                <div>Enter a value above or choose an option<span class="text-warning closeButton">X</span></div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="25,000">25 Thousand</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="50,000">50 Thousand</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="100,000">100 Thousand</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="250,000">250 Thousand</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="500,000">500 Thousand</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="1,000,000">1 Million</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="5,000,000">5 Million</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="10,000,000">10 Million</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="100,000,000">100 Million</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="500,000,000">500 Million</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="1,000,000,000">1 Billion</div>
+                <div class="dropdownvalues selectOption" data-id="dailyVolume" data-qty="2,000,000,000">2 Billion</div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <label for="circulatingSupply">Circulating Supply</label>
+              <input type="text" class="form-control" id="circulatingSupply" value="647,510,199,215,996" />
+            
+              <div class="dropdown bg-secondary text-light mr-3 p-1">
+                <div>Enter a value above or choose an option<span class="text-warning closeButton">X</span></div>
+                <div class="dropdownvalues selectOption" data-id="circulatingSupply" data-qty="647,510,199,215,996">Current (~650
+                  Trillion)</div>
+                <div class="dropdownvalues selectOption" data-id="circulatingSupply" data-qty="600,000,000,000,000">600 Trillion
+                </div>
+                <div class="dropdownvalues selectOption" data-id="circulatingSupply" data-qty="500,000,000,000,000">500 Trillion
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 text-center">
+            <br> <br />
+            <button class="btn btn-success btn-block text-center" style="background-color:#dc289b; font-family: 'Open Sans'"
+              id="calc" type="button">Show Me!</button>
+            <br> <br />
+          </div>
+        </div>
+        <div class="row price">
+          <!-- start price of Rematic & Portfolio Value -->
+          <div class="col-md-6 text-center">
+            <label for="pricerematic">
+              <h5>Current price of Rematic - </h5>
+            </label>
+            <h7><span style="font-weight: bold;" id="pricerematic"></span></h7>
+          </div>
+          <div class="col-md-6 text-center">
+            <label for="totalValue">
+              <h5>Current Portfolio Value - </h5>
+            </label>
+            <h7>$<span style="font-weight: bold;" id="totalValue"></span></h7>
+          </div>
+          <div class="col-md-6 text-center">
+            <label for="estrematicprice">
+              <h5>Estimated Rematic price at selected MarketCap - </h5>
+            </label>
+            <h7><span id="estrematicprice"></span></h7>
+          </div>
+          <div class="col-md-6 text-center">
+            <label for="Estimatedtotal">
+              <h5>Estimated Portfolio Total at selected MarketCap - </h5>
+            </label>
+            <h7>$<span id="Estimatedtotal"></span></h7>
+          </div>
+        
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h3><span id="error"></span></h3>
+            <h4 class="reflections"><b>Estimated <span class="spa">Daily</span> Reflections - EGC Tokens - </b><span
+                style="color: #dc289b;" id="dailyReflections"></span> ($ <span id="dailyvalue"></span></span>)</h4>
+            <h4 class="reflections"><b> Estimated <span class="spa">Monthly</span> Reflections - EGC Tokens - </b><span
+                style="color: #dc289b;" id="monthlyReflections"></span> ($ <span id="monthlyvalue"></span></span>)</h4>
+            <!-- Not yet added Yearly reflections to dashboard -->
+            <!-- <h4 style="color: Silver;"><b>Estimated Yearly Reflections - EGC Tokens - </b><span id="myYearlyReflections"></span> ($
+                          <span id=""></span></span>)</h4> -->
+            <h4 class="reflections"><b> EGC Price - </b><span style="color: #dc289b;" id="egcprice"></span></h4>
+          </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center mb-2 p-2">
+            <h5>
+              <i>*Note - Use a modern browser like Chrome, Edge or Firefox to access the calculator. Calculator not supported on
+            legacy Internet Explorer browser.</i>
+          </h5>
+            <hr>
+            </div>
+            <div class="col-md-12">
+                <h4 style="text-align: left; font-size: 30px; color: #dc289b; font-weight: bold; padding: 10px 20px;">Quick Links</h4>
+                <ul>
+                  <li>Rematic <a href="https://rematicegc.com/" style="color:#dc289b;" target="_blank"> Website</a>.</li>
+                  <li>Price Chart on <a href="https://poocoin.app/tokens/0x0c01099f3d4c920504e577bd7617f0d7c53cd8df"
+                  style="color:#dc289b;" target="_blank">PooCoin Chart</a>.</li>
+                  <li>Buy on <a href="https://pancakeswap.finance/swap?outputCurrency=0x0c01099f3d4c920504e577bd7617f0d7c53cd8df"
+                  style="color:#dc289b;" target="_blank">Pancake Swap</a>.</li>
+                  <li>How to <a href="https://buy.rematicegc.com/" style="color:#dc289b;" target="_blank"> Buy</a>.</li>
+                </ul>
+            </div>
+        </div>      
+  </div>
+
+ </div>
+   
+<!-- end the calc -->
+ <script src="main.js"></script>
+ </body>
+</html>
+<!-- This is a html code to calculate Rematic Token Reflections -->
+<!-- 
+*Main Sections of Code -
+-Header - Includes graphics and initializations
+-Body - Includes form fields and options
+-Style - Includes functions for formatting
+-Script - Includes calculations and processing 
+- Added API call to CoinGecko to get EGC price in real time
+- Added API call to CoinGecko to get Rematic price in real time
+- Commented out few rows and realigned columns for cleaner mobile version
+-->
