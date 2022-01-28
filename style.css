@@ -38,6 +38,8 @@ element.style {
 }
 .form-control {
   cursor: pointer;
+  border-radius: 10px;
+
 }
 .reflections {
   border: 1px solid #ffffff;
@@ -67,10 +69,9 @@ img {
 .bg-secondary {
   background-color: #9d9fa2e0 !important;
 }
-.btn-success {
-  color: #fff;
-  border-color: #acaeb1;
+.btn-pramary {
+  border-radius: 10px;
 }
-.btn-success:focus {
-  border-color: #acaeb1;
+.btn-pramary:focus {
+  border: 2px solid #acaeb1;
 }
